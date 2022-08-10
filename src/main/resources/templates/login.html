@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow">
+<h2>Wellcome to the Login Page......!</h2>
+<hr>
+<hr>
+<form action="#" th:action="@{/login}" th:object="${user}" method="post">  
+    Name     :<input type="text" th:field="*{username}" class="form-control"/><br>  
+    Password :<input type="password" th:field="*{password}"  class="form-control"/><br>  
+    <hr>
+    <button type="submit" class="btn-btn-info">Login</button>  
+    <hr>
+    <hr>
+</body>
+</html>
